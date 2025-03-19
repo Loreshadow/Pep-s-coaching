@@ -1,0 +1,45 @@
+/* css rules  */
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/static/Roboto-Medium.ttf);
+}
+
+/* colors  */
+
+/* pink:   #FF4676
+blue:   #68D8EE
+yellow: #FFE17A
+purple: #DB7CF2 */
+
+/* css global  */
+body {
+    font-family: "Roboto";
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+
+cta {
+    background-color: #FF4676;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.cta--secondary {
+    background-color: white;
+    border: 1px solid #FF4676;
+    color: #FF4676;
+}
+
