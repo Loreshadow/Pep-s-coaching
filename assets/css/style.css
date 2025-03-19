@@ -23,13 +23,18 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 4rem;
 }
 h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+p, ul {
+    font-size: 1.25rem;
+    margin: 0 auto;
 }
 
 .menu-icons {
@@ -41,7 +46,6 @@ h3 {
     color: rgba(0, 0, 0, 0.608);
 }
 
-
 .cta {
     background-color: #FF4676;
     border-radius: 5px;
@@ -51,11 +55,11 @@ h3 {
     padding: 15px 30px 15px 30px;
 }
 
-
 .cta--secondary {
     background-color: white;
     border: 1px solid #FF4676;
     color: #FF4676;
+    margin: 20px;
 }
 
 /* section header  */
@@ -64,7 +68,6 @@ h3 {
     justify-content: space-evenly;
     margin: 1%;
 }
-
 
 .header > ul {
     display: flex;
@@ -88,16 +91,42 @@ h3 {
 }
 
 /* section approche  */
-
+.approche-content-secondary > div > ul {
+    list-style:  none;
+}
 .approche-content-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.approche-container-secondary {
+    display: flex;
+    justify-content: center;
+}
+
+.content-img-container {
+    margin-top: 2.5%;
+}
+
+.approche-content-secondary {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    line-height: 2rem;
+    width: 33.854vw;
+}
+
+/* section explication méthode pep's  */
+
+.method-content-primary {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.approche-content-secondary {
-    margin-top: 2.61vh;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    margin-top: 8%;
 }
