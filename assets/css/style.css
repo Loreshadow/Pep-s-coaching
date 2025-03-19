@@ -211,6 +211,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    line-height: 1.5rem;
 }
 
 .review-card {
@@ -220,7 +221,7 @@ ul {
     text-align: center;
     border: 1px solid #68D8EE;
     width: 30%;
-    height: 85.92vh;
+    height: 70.92vh;
     padding: 10px;
 }
 .reviewcard-content {
