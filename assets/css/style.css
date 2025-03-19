@@ -37,6 +37,10 @@ p, ul {
     margin: 0 auto;
 }
 
+ul { 
+    list-style: none;
+}
+
 .menu-icons {
     text-decoration: none;
     color: black;
@@ -59,7 +63,7 @@ p, ul {
     background-color: white;
     border: 1px solid #FF4676;
     color: #FF4676;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 /* section header  */
@@ -73,11 +77,9 @@ p, ul {
     display: flex;
     align-items: center;
     gap: 50px;
-    list-style: none;
 }
 
 /* section banner  */
-
 #banner {
     background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
     background-size: cover;
@@ -91,9 +93,6 @@ p, ul {
 }
 
 /* section approche  */
-.approche-content-secondary > div > ul {
-    list-style:  none;
-}
 .approche-content-primary {
     display: flex;
     flex-direction: column;
@@ -121,7 +120,6 @@ p, ul {
 }
 
 /* section explication méthode pep's  */
-
 .method-content-primary {
     display: flex;
     flex-direction: column;
@@ -150,8 +148,100 @@ p, ul {
     margin-right: 8%;
 }
 
-
 .sources {
     font-size: 1rem;
     font-style: italic;
 }
+
+/* section accompagnement  */
+.accompagnement-content-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 4%;
+    line-height: 2rem;
+    margin-bottom: 3%;
+}
+
+.accompagnement-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accompagnement-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accompagnement-card > h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: #68D8EE;
+}
+
+.accompagnement-card:not(:first-child) > h3::after {
+    content: "";
+    background-color: #FFE17A;
+}
+
+.accompagnement-card:nth-child(3) > h3::after {
+    content: "";
+    background-color: #DB7CF2;
+}
+
+/* section reviews  */
+
+.reviews-content-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.reviews-content-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #68D8EE;
+    width: 30%;
+    height: 85.92vh;
+    padding: 10px;
+}
+.reviewcard-content {
+    padding: 50px;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url(../img/Mask\ Group.jpg);
+    background-size: cover;
+}
+
+.reviews-content-secondary > .review-card:nth-of-type(2) > .photo-container {
+    background-image: url(../img/Mask\ Group-1.jpg);
+}
+
+.reviews-content-secondary > .review-card:nth-of-type(3) > .photo-container {
+    background-image: url(../img/Mask\ Group\ \(1\).jpg);
+} 
