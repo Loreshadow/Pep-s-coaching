@@ -29,7 +29,14 @@ h3 {
     font-size: 24px;
 }
 
-cta {
+.menu-icons {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.cta {
     background-color: #FF4676;
     border-radius: 5px;
     color: white;
@@ -41,5 +48,19 @@ cta {
     background-color: white;
     border: 1px solid #FF4676;
     color: #FF4676;
+}
+
+/* Catégorie header  */
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header > ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
 }
 
