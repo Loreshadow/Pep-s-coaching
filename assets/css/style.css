@@ -242,7 +242,7 @@ ul {
     position: relative;
     border: 1px solid #68D8EE;
     height: 78.92vh;
-    width: 25%;
+    width: 26.042vw;
     padding: 10px;
     padding-top: 75px;
 }
@@ -278,7 +278,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
+    width: 72.917vw;
 }
 
 .blog-content-primary {
@@ -322,7 +322,7 @@ ul {
 footer {
     margin-top: 35px;
     background-color: rgb(222, 218, 218);
-    padding: 20epx;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,9 +362,6 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 50px;
-}
-
-.menu-bot-container {
     padding: 20px;
     padding-bottom: 0px;
 }
@@ -442,7 +439,9 @@ footer {
     }
 
     .accompagnement-content-primary {
-        width: 65%;
+        width: 60%;
+        padding: 15px;
+        line-height: 2rem;
         justify-content: center;
         align-items: center;
     }
@@ -450,5 +449,99 @@ footer {
     .accompagnement-card-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    /* categorie review  */
+    #reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviews-content-primary {
+        margin: 100px;
+    }
+
+    .review-card {
+        width: 70%;
+        height: auto;
+        padding-top: 100px;
+    }
+    .reviews-content-secondary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+    /* section blog  */
+    .blog-article-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blog-content-article-primary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+
+        margin-bottom: 20px;
+        padding-top: 12.5px;
+        margin-left: 0px;
+    }
+
+    .blog-img-container-primary > img {
+        width: 100%;   
+        margin-right: 0px;
+    }
+    .blog-article-container::after {
+        content: "";
+        display: inline-block;
+        position: relative;
+        left: 25px;
+        width: 75%;
+        height: 2px;
+        background-color: #68D8EE;
+    }
+
+    /* footer  */
+    footer {
+        width: 100%;
+    }
+    .footer-content-primary {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 75%;
+        transform: translate(0%);
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-content-secondary > ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0px;
+        margin-top: 40px;
+    }
+
+    .menu-bot-container > :not(:first-child)::before {
+        content: none;
+    }
+    .footer-contact::before {
+        content: none;
     }
    }
