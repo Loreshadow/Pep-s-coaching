@@ -377,3 +377,78 @@ footer {
     margin-right: 10px;
     background-color: black;
 }
+
+/* tablet responsive  */
+@media screen and (max-width: 768px) {
+    /* header  */
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header > ul {
+        gap: 20px;
+    }
+    .menu-top-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    /* banner  */
+    #banner {
+        justify-content: center;
+        align-items: center;
+        padding: 2.5%;
+    }
+    /* section approche  */
+    #approche {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .approche-container-secondary {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .approche-content-secondary {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+        padding-left: 2%;
+        line-height: 2rem;
+        width: 75%;
+    }
+    /* section method  */
+    .method-content-primary {
+        width: 75%;
+    }
+
+    .method-card-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .method-card {
+        width: 50%;
+    }
+    /* section accompagnement  */
+    #accompagnement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .accompagnement-content-primary {
+        width: 65%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accompagnement-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+   }
