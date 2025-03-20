@@ -44,12 +44,12 @@ ul {
     list-style: none;
 }
 
-.menu-icons {
+.menu-items {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
 }
-.menu-icons:hover {
+.menu-items:hover {
     color: rgba(0, 0, 0, 0.608);
 }
 
@@ -271,6 +271,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 75%;
 }
 
 .blog-content-primary {
@@ -299,13 +300,62 @@ ul {
     content: "";
     display: inline-block;
     position: relative;
-    left: 5%;
-    width: 90%;
-    height: 3px;
-    margin: 0;
+    left: 150px;
+    width: 95%;
+    height: 2px;
     background-color: #68D8EE;
 }
 
 .article-content-primary{
     margin-left: 50px;
+}
+
+/* footer  */
+
+footer {
+    margin-top: 35px;
+    background-color: rgb(222, 218, 218);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-contact::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 12.5%;
+    width: 3px;
+    height: 125px;
+    background-color: black;
+}
+
+.footer-content-secondary > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu-bot-container {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.menu-bot-container > :not(:first-child)::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: black;
 }
