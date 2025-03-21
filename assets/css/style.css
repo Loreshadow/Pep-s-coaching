@@ -214,7 +214,6 @@ ul {
 .reviews-content-secondary {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 5%;
     line-height: 1.5rem;
 }
@@ -226,10 +225,9 @@ ul {
     text-align: center;
     position: relative;
     border: 1px solid #68D8EE;
-    height: 78.92vh;
-    width: 26.042vw;
+    width: 25%;
     padding: 10px;
-    padding-top: 75px;
+    padding-top: 90px;
 }
 .reviewcard-content {
     padding: 50px;
