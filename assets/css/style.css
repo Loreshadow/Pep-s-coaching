@@ -94,23 +94,23 @@ ul {
 }
 
 /* section approche  */
-.approche-content-primary {
+.approche-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
 }
 
-.approche-container-secondary {
+.approche-container {
     display: flex;
     justify-content: center;
 }
 
-.content-img-container {
+.approche-img-container {
     margin-top: 2.5%;
 }
 
-.approche-content-secondary {
+.approche-content {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
@@ -120,7 +120,7 @@ ul {
 }
 
 /* section method  */
-.method-content-primary {
+.method-heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +154,7 @@ ul {
 }
 
 /* section accompagnement  */
-.accompagnement-content-primary {
+.accompagnement-heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,7 +203,7 @@ ul {
 }
 
 /* section reviews  */
-.reviews-content-primary {
+.reviews-heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +211,7 @@ ul {
     margin-bottom: 5%;
 }
 
-.reviews-content-secondary {
+.reviews-content {
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -248,20 +248,20 @@ ul {
     background-size: cover;
 }
 
-.reviews-content-secondary > .review-card:nth-of-type(2) > .photo-container {
+.reviews-content > .review-card:nth-of-type(2) > .photo-container {
     background-image: url(../img/Mask\ Group-1.jpg);
 }
 
-.reviews-content-secondary > .review-card:nth-of-type(3) > .photo-container {
+.reviews-content > .review-card:nth-of-type(3) > .photo-container {
     background-image: url(../img/Mask\ Group\ \(1\).jpg);
 } 
 
 /* section blog  */
-.blog-article-container {
+.blog-heading {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 72.917vw;
 }
 
 .blog-content-primary {
@@ -278,7 +278,7 @@ ul {
     width: 20vw;
     margin-right: 0px;
 }
-.blog-content-article-primary {
+.blog-content-container {
     display: flex;
     margin-bottom: 12.5px;
     margin-top: 12.5px;
@@ -295,7 +295,7 @@ ul {
     background-color: #68D8EE;
 }
 
-.article-content-primary{
+.article-content{
     margin-left: 50px;
 }
 
@@ -310,7 +310,7 @@ footer {
     align-items: center;
 }
 
-.footer-content-primary {
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +338,7 @@ footer {
     background-color: black;
 }
 
-.footer-content-secondary > ul{
+.footer-content-menu > ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,12 +396,12 @@ footer {
         max-width: 100%;
         width: 100%;
     }
-    .approche-container-secondary {
+    .approche-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .approche-content-secondary {
+    .approche-content {
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -413,11 +413,11 @@ footer {
         width: 85%;
     }
 
-    .content-img-container > img {
+    .approche-img-container > img {
         max-width: 100%;
     }
     /* section method  */
-    .method-content-primary {
+    .method-heading {
         max-width: 85%;
         width: 85%;
         margin-bottom: 5%;
@@ -441,7 +441,7 @@ footer {
         justify-content: center;
     }
 
-    .accompagnement-content-primary {
+    .accompagnement-heading {
         max-width: 95%;
         padding: 15px;
         line-height: 2rem;
@@ -463,7 +463,7 @@ footer {
         align-items: center;
     }
 
-    .reviews-content-primary {
+    .reviews-heading {
         margin: 100px;
     }
 
@@ -478,7 +478,7 @@ footer {
         height: auto;
         padding-top: 15%;
     }
-    .reviews-content-secondary {
+    .reviews-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -495,7 +495,7 @@ footer {
         margin-left: 2.5%;
     }
 
-    .blog-content-article-primary {
+    .blog-heading {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -505,7 +505,7 @@ footer {
         padding-top: 12.5px;
     }
 
-    .article-content-primary {
+    .article-content {
         max-width: 100%;
         margin: 0;
     }
@@ -535,7 +535,7 @@ footer {
         max-width: 100%;
         width: 100%;
     }
-    .footer-content-primary {
+    .footer-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -552,7 +552,7 @@ footer {
         align-items: center;
     }
 
-    .footer-content-secondary > ul{
+    .footer-content-menu > ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
