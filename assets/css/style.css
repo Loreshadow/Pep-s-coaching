@@ -90,7 +90,6 @@ ul {
     justify-content: center;
     align-items: center;
     height: 45vh;
-    width: auto;
     margin-bottom: 25px;
 }
 
@@ -115,13 +114,12 @@ ul {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    flex-wrap: wrap;
     padding-left: 2%;
     line-height: 2rem;
     width: 33.854vw;
 }
 
-/* section explication méthode pep's  */
+/* section method  */
 .method-content-primary {
     display: flex;
     flex-direction: column;
@@ -160,7 +158,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     margin-top: 4%;
     line-height: 2rem;
@@ -305,7 +302,6 @@ ul {
 }
 
 /* footer  */
-
 footer {
     margin-top: 35px;
     background-color: rgb(222, 218, 218);
