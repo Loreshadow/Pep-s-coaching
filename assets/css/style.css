@@ -41,6 +41,7 @@ ul {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    transition: all 0.2s ease-in;
 }
 .menu-items:hover {
     color: rgba(0, 0, 0, 0.608);
@@ -55,17 +56,32 @@ ul {
     border: 1px solid #FF4676;
     color: #FF4676;
     margin-top: 20px;
+    transition: all 0.2s ease-in;
 }
 
 .cta--primary {
-    background-color: #FF4676;
+    background-color: #ff4677e7;
     color: white;
     margin-top: 0px;
+}
+.cta--primary:hover {
+    background-color:   #ff366b;
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.281);
+}
+
+.cta--secondary:hover {
+    background-color: rgba(227, 226, 226, 0.319);
+    box-shadow: 1px 2px 10px 2px rgba(0, 0, 0, 0.075);
+
 }
 
 .cta--tertiary {
     display: inline-block;
     padding: 20px 50px 20px 50px;
+}
+.cta--tertiary:hover {
+    background-color: rgba(227, 226, 226, 0.319);
+    box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.075);
 }
 
 /* section header  */
@@ -275,9 +291,10 @@ ul {
 
 .blog-img-container-primary > img {
     height: 30vh;
-    width: 20vw;
+    width: 450px;
     margin-right: 0px;
 }
+
 .blog-content-container {
     display: flex;
     margin-bottom: 12.5px;
@@ -492,13 +509,14 @@ footer {
         align-items: center;
         max-width: 95%;
         width: 95%;
-        margin-left: 2.5%;
+        margin: 2.5%;
     }
 
     .blog-heading {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
         width: 100%;
         margin: 0;
         margin-bottom: 20px;
@@ -506,17 +524,24 @@ footer {
     }
 
     .article-content {
-        max-width: 100%;
+        margin: 10px;
+    }
+
+    .blog-content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         margin: 0;
     }
 
     .blog-img-container-primary {
-        max-width: 95%;
-        width: 95%;
+        width: 100%;
     }
+
     .blog-img-container-primary > img {
-        max-width: 95%; 
-        width: 95%;
+        max-width: 100%;
+        width: 100%;
         margin-right: 0px;
     }
     .blog-article-container::after {
@@ -524,8 +549,8 @@ footer {
         display: inline-block;
         position: relative;
         left: 5px;
-        max-width: 100%;
-        width: 100%;
+        max-width: 90%;
+        width: 90%;
         height: 2px;
         background-color: #68D8EE;
     }
