@@ -4,14 +4,6 @@
     src: url(../fonts/Roboto/static/Roboto-Medium.ttf);
     font-weight: 400;
 }
-
-/* colors  */
-
-/* pink:   #FF4676
-blue:   #68D8EE
-yellow: #FFE17A
-purple: #DB7CF2 */
-
 /* css global  */
 * {
     box-sizing: border-box;
@@ -55,35 +47,32 @@ ul {
 }
 
 .cta {
-    background-color: #FF4676;
     border-radius: 5px;
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 15px 30px 15px 30px;
-}
-
-.cta--secondary {
     background-color: white;
     border: 1px solid #FF4676;
     color: #FF4676;
     margin-top: 20px;
+}
+
+.cta--primary {
+    background-color: #FF4676;
+    color: white;
+    margin-top: 0px;
 }
 
 .cta--tertiary {
     display: inline-block;
-    background-color: white;
-    border: 1px solid #FF4676;
-    color: #FF4676;
     padding: 20px 50px 20px 50px;
-    margin-top: 20px;
 }
-
 
 /* section header  */
 .header {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 10%;
 }
 
 .header > ul {
@@ -301,7 +290,6 @@ ul {
     margin-left: 250px;
 }
 
-
 .blog-article-container::after {
     content: "";
     display: inline-block;
@@ -376,12 +364,15 @@ footer {
 
 /* tablet responsive  */
 @media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
     /* header  */
     .header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        max-width: 100%;
     }
     .header > ul {
         gap: 20px;
@@ -396,12 +387,20 @@ footer {
         align-items: center;
         padding: 2.5%;
     }
+    #banner > h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0px;
+        max-width: 100%    ;
+    }
     /* section approche  */
     #approche {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        max-width: 100%;
+        width: 100%;
     }
     .approche-container-secondary {
         flex-direction: column;
@@ -413,13 +412,21 @@ footer {
         flex-direction: column;
         align-self: center;
         justify-content: center;
+        text-align: left;
         padding-left: 2%;
         line-height: 2rem;
-        width: 75%;
+        max-width: 85%;
+        width: 85%;
+    }
+
+    .content-img-container > img {
+        max-width: 100%;
     }
     /* section method  */
     .method-content-primary {
-        width: 75%;
+        max-width: 85%;
+        width: 85%;
+        margin-bottom: 5%;
     }
 
     .method-card-container {
@@ -428,7 +435,9 @@ footer {
         justify-content: center;
     }
     .method-card {
-        width: 50%;
+        max-width: 75%;
+        width: 75%;
+        margin-bottom: 2.5%;
     }
     /* section accompagnement  */
     #accompagnement {
@@ -439,7 +448,7 @@ footer {
     }
 
     .accompagnement-content-primary {
-        width: 60%;
+        max-width: 95%;
         padding: 15px;
         line-height: 2rem;
         justify-content: center;
@@ -449,6 +458,7 @@ footer {
     .accompagnement-card-container {
         flex-direction: column;
         align-items: center;
+        max-width: 85%;
     }
 
     /* categorie review  */
@@ -463,10 +473,16 @@ footer {
         margin: 100px;
     }
 
+    .reviewcard-content {
+        padding: 0px;
+        padding-top: 10px;
+        line-height: 1.75rem;
+    }
     .review-card {
-        width: 70%;
+        max-width: 95%;
+        width: 95%;
         height: auto;
-        padding-top: 100px;
+        padding-top: 15%;
     }
     .reviews-content-secondary {
         flex-direction: column;
@@ -480,36 +496,49 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        max-width: 95%;
+        width: 95%;
+        margin-left: 2.5%;
     }
 
     .blog-content-article-primary {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 75%;
-
+        width: 100%;
+        margin: 0;
         margin-bottom: 20px;
         padding-top: 12.5px;
-        margin-left: 0px;
     }
 
+    .article-content-primary {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .blog-img-container-primary {
+        max-width: 95%;
+        width: 95%;
+    }
     .blog-img-container-primary > img {
-        width: 100%;   
+        max-width: 95%; 
+        width: 95%;
         margin-right: 0px;
     }
     .blog-article-container::after {
         content: "";
         display: inline-block;
         position: relative;
-        left: 25px;
-        width: 75%;
+        left: 5px;
+        max-width: 100%;
+        width: 100%;
         height: 2px;
         background-color: #68D8EE;
     }
 
     /* footer  */
     footer {
+        max-width: 100%;
         width: 100%;
     }
     .footer-content-primary {
@@ -517,6 +546,7 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
+        max-width: 75%;
         width: 75%;
         transform: translate(0%);
     }
@@ -546,68 +576,8 @@ footer {
     }
    }
 
-   /* mobile responsive  */
-
    @media screen and (max-width: 375px) {
-    /* header  */
-    .header {
-        width: 100%;
-    }
-    /* section banner  */
-    #banner > h1 {
-        font-size: 2rem;
-        text-align: center;
-        padding: 0px;
-        margin: 0 25% 5% 25%;
-        max-width: 100%    ;
-    }
-    /* section approche  */
-    .approche-content-primary {
-        text-align: center;
-        max-width: 100%;
-    }
-    .approche-container-secondary {
-        max-width: 100%;
-        margin: 5%;
-    }
-    .content-img-container > img {
-        max-width: 100%;
-    }
-
-    .approche-content-secondary {
-        width: 100%;
-    }
-
-    /* section method  */
-    .method-content-primary {
-        max-width: 100%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 25px;
-    }
-    .method-card {
-        width: 90%;
-    }
-    /* section accompagnement  */
-    .accompagnement-content-primary {
-        width: 100%;
-    }
-
-    .accompagnement-card {
-        width: 60%;
-    }
-    /* section review  */
     .review-card {
-        width: 90%;
-    }
-    .reviewcard-content {
-        width: 100%;
-    }
-
-    /* section blog  */
-    .blog-content-primary {
-        text-align: center;
-        width: 90%;
+        padding-top: 25%;
     }
     }
